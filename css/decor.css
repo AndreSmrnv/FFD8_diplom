@@ -1,0 +1,43 @@
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif|Noto+Serif+KR&display=swap');
+
+
+body {
+  
+  font-family: 'IBM Plex Sans ', sans-serif;
+}
+
+.header-info {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background-color: #4F4F4F;
+	color: #C4C4C4;
+}
+.header-info-tel {
+	position: relative; 
+	margin: 16px 0;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+.header-info-tel:before {
+	display: block;
+	content: "";
+	width: 24px;
+  	height: 24px;
+  	position: absolute;
+  	
+	background-image: url("../images/telephone-handle-silhouette.svg");
+	background-size: 24px 24px;
+}
+.social-network-container {
+	display: flex;
+	margin: 16px 0;
+}
+.social-network {
+	width: 24px;
+  	height: 24px;
+  	
+}
