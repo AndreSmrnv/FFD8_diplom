@@ -10,34 +10,129 @@ body {
 .header-info {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	position: relative;
 	flex-direction: row;
+	justify-content: flex-end;
 	background-color: #4F4F4F;
 	color: #C4C4C4;
 }
 .header-info-tel {
 	position: relative; 
-	margin: 16px 0;
+	padding: 14px 12px;
+	border-right: 1px solid #C4C4C4;
+	flex-grow: 1;
 	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
+	text-align: right;
+
 }
 .header-info-tel:before {
 	display: block;
 	content: "";
-	width: 24px;
-  	height: 24px;
+	width: 20px;
+  	height: 20px;
   	position: absolute;
-  	
+  	top: calc(50% - 10px);
+  	right: 170px;	
 	background-image: url("../images/telephone-handle-silhouette.svg");
-	background-size: 24px 24px;
+	background-size: 20px 20px;
+}
+.header-info-time {
+	display: none;
+}
+.header-info-map {
+	padding: 14px 12px;
+	border-right: 1px solid #C4C4C4;
+}
+.header-info-map-logo {
+	width: 20px;
+  	height: 20px;
 }
 .social-network-container {
 	display: flex;
-	margin: 16px 0;
+	margin: 14px 9px;
 }
 .social-network {
-	width: 24px;
-  	height: 24px;
-  	
+	width: 20px;
+  	height: 20px;
+  	margin: 0 4px ;
+}
+.header-logo {
+	display: block;
+	position: absolute;
+	width: 97px;
+  	height: 92px; 	
+  	top: 100%;
+  	left: 8px;	
+  	border-radius: 0 0 6px 6px ;
+  	overflow: hidden;
+}
+.header-logo-img {
+	width: 97px;
+  	height: 92px;
+ }
+
+.intro {
+	background-image: url("../images/office-classic-style.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100% ;
+
+}
+.intro-container {
+	max-width: 100%;
+	padding-top: 100px;
+	padding-left: 25px;
+	background: rgba(51, 51, 51, 0.66);
+	font-family: 'Noto Serif KR', serif;
+	color: #F2C94C;
+}
+.intro-title {
+	position: relative;
+	
+	margin-top: 25px;
+	font-size: 24px;
+	line-height: 34px;
+}
+.intro-title:after {
+	display: block;
+	content: "";
+	width: 105px;
+  	height: 2px;
+  	position: absolute;
+  	top: 100%;
+  	left: 0;	
+	background-image: url("../images/intro_line.svg");
+	
+}
+.intro-desc {
+	margin-top: 25px;
+}
+.intro-slogan {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.intro-button-vizit {
+	background-color: #B49256;
+  	cursor: pointer;
+  	border-radius: 6px;
+  	padding: 5px  5px;
+  	margin-bottom: 15px;  	
+  	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	
+	font-weight: bold;
+	  
+  	font-size: 14px;
+  	color: #E5E5E5;
+  	text-align: center;
+  	letter-spacing: 0.05em;
+  	text-transform: uppercase;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.intro-button-vizit:hover {
+  box-shadow: 0 0 0 2px #D2973D inset, 0 0 0 4px white inset;
+ }
+  
+.footer {
+	margin: 1600px 0;
 }
