@@ -439,7 +439,7 @@ body {
 } 
 .trends-item{
 	display: block;
-	width: 33.0%;
+	width: calc(33.3% - 1px);
 	
 	margin: 0;
 	padding: 0;
