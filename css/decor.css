@@ -3,7 +3,7 @@
 
 
 body {
-  
+  max-width: 360px;
   font-family: 'IBM Plex Sans ', sans-serif;
 }
 
